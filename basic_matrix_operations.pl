@@ -94,7 +94,7 @@ mMal(A,[H2|T2],X) :- length(A,L),
 nullVector([]).
 nullVector([0|T]) :- nullVector(T).
 
-/* Check if a vector has all its element equal to 0 except for the first */
+/* Check if a vector has all its element equal to 0 except for the i-th */
 zeroExceptI([],0).
 zeroExceptI([_|T],1) :- nullVector(T).
 zeroExceptI([0|T],X) :- K is X-1,
